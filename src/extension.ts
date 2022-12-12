@@ -6,6 +6,9 @@ export function activate(context: vscode.ExtensionContext) {
 	// Get the API session token from the extension's configuration
 	const config = vscode.workspace.getConfiguration('chatgpt');
 	const sessionToken = config.get('sessionToken') as string|undefined;
+	// clearanceToken
+        // userAgent
+	
 
 	// Create a new ChatGPTViewProvider instance and register it with the extension's context
 	const provider = new ChatGPTViewProvider(context.extensionUri);
